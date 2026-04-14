@@ -13,25 +13,14 @@
 
 ## Key Features
 
-- **NIST Standard Security**: Uses the finalized NIST LWC standard (ASCON) optimized for microcontrollers.
 - **End-to-End Encryption**: Secure data flow from ESP32 edge nodes to Python-based monitoring clusters.
-- **AEAD Protection**: Ensures both **Confidentiality** (encryption) and **Integrity** (authentication tag).
-- **MQTT Integration**: Seamlessly operates with standard MQTT brokers (e.g., HiveMQ).
+- **AEAD Protection**: Ensures both **Confidentiality** and **Integrity**.
+- **MQTT Integration**: Seamlessly operates with standard MQTT brokers .
 - **Stateful Communication**: Implements nonce-synchronization to prevent replay attacks.
 
 ---
 
-
-## 📂 Project Structure
-
-- `lightweight_ascon.ino`: Core ESP32 sketch handling WiFi, MQTT, and encryption loops.
-- `aead.c / ascon.h`: C-implementation of the ASCON AEAD core.
-- `rece/recevier.py`: Python-based subscriber that decrypts incoming hexadecimal streams.
-- `rece/ascon.py`: Python implementation of ASCON for cross-platform compatibility.
-
----
-
-## 🛠️ Getting Started
+## Getting Started
 
 ### 1. Hardware Requirements
 - ESP32 Development Board (e.g., ESP32-S3, DevKitV1).
@@ -59,7 +48,7 @@
 
 ---
 
-## 🔒 Security Specifications
+## Security Specifications
 
 | Specification | Value |
 | :--- | :--- |
@@ -74,5 +63,5 @@
 
 ---
 
-## 📜 License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
