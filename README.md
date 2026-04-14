@@ -11,7 +11,7 @@
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - **NIST Standard Security**: Uses the finalized NIST LWC standard (ASCON) optimized for microcontrollers.
 - **End-to-End Encryption**: Secure data flow from ESP32 edge nodes to Python-based monitoring clusters.
@@ -21,28 +21,6 @@
 
 ---
 
-## 📐 System Architecture
-
-```mermaid
-graph LR
-    subgraph Edge_Device [ESP32 Node]
-        A[Sensor Data] --> B[ASCON-128 Encrypt]
-        B --> C[Nonce Update]
-        C --> D[MQTT Publish]
-    end
-
-    subgraph Broker [MQTT Cloud]
-        D --> E((HiveMQ Broker))
-    end
-
-    subgraph Receiver [Monitoring Dashboard]
-        E --> F[MQTT Subscribe]
-        F --> G[ASCON-128 Decrypt]
-        G --> H[Plaintext Data]
-    end
-```
-
----
 
 ## 📂 Project Structure
 
