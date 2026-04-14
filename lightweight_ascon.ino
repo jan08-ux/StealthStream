@@ -6,8 +6,8 @@ extern "C" {
   #include "api.h"
 }
 // 🔹 WiFi
-const char* ssid = "COE IOT";
-const char* password = "00000000";
+const char* ssid = "your ssid";
+const char* password = "your password";
 
 // 🔹 MQTT
 const char* mqtt_server = "broker.hivemq.com";
